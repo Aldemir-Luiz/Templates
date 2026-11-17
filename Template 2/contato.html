@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a nossa equipe: peça um orçamento de móveis para escritório por formulário, telefone, e-mail ou WhatsApp.">
+  <title>Contato | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a href="index.html" class="brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile em tela cheia (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="menu-button" aria-hidden="true">Menu</label>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="main-nav__list">
+          <li><a href="index.html" class="main-nav__link">Home</a></li>
+          <li><a href="sobre.html" class="main-nav__link">Sobre</a></li>
+          <li><a href="produtos.html" class="main-nav__link">Produtos</a></li>
+          <li><a href="precos.html" class="main-nav__link">Preços</a></li>
+          <li><a href="contato.html" class="main-nav__link main-nav__link--active" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== CABEÇALHO DA PÁGINA ========== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Contato</p>
+        <h1 class="page-head__title">Vamos conversar sobre o seu escritório</h1>
+        <p class="page-head__lead">
+          Conte o que você precisa e nossa equipe retorna com uma proposta personalizada.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== FORMULÁRIO + DADOS ========== -->
+    <section class="block">
+      <div class="container reach">
+
+        <!-- Formulário -->
+        <div class="reach__form">
+          <p class="eyebrow">Mensagem</p>
+          <h2 class="block__title">Envie os detalhes do seu projeto</h2>
+
+          <form class="form" id="contact-form" action="#" method="post">
+
+            <div class="form__field">
+              <label class="form__label" for="contact-name">Nome *</label>
+              <input class="form__control" type="text" id="contact-name" name="nome"
+                     autocomplete="name" required placeholder="Seu nome completo">
+            </div>
+
+            <div class="form__row">
+              <div class="form__field">
+                <label class="form__label" for="contact-email">E-mail *</label>
+                <input class="form__control" type="email" id="contact-email" name="email"
+                       autocomplete="email" required placeholder="voce@empresa.com.br">
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="contact-tel">Telefone / WhatsApp</label>
+                <input class="form__control" type="tel" id="contact-tel" name="telefone"
+                       autocomplete="tel" placeholder="(00) 00000-0000">
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="contact-subject">Assunto *</label>
+              <select class="form__control" id="contact-subject" name="assunto" required>
+                <option value="" selected disabled>Selecione um assunto</option>
+                <option value="orcamento">Solicitar orçamento</option>
+                <option value="projeto">Projeto de ambientação</option>
+                <option value="duvidas">Dúvidas sobre produtos</option>
+                <option value="pos-venda">Pós-venda e garantia</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="contact-message">Mensagem *</label>
+              <textarea class="form__control form__control--textarea" id="contact-message" name="mensagem"
+                        rows="5" required placeholder="Descreva o que você precisa"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--solid form__submit">Enviar mensagem</button>
+
+          </form>
+        </div>
+
+        <!-- Dados de contato -->
+        <aside class="reach__info" aria-label="Informações de contato">
+
+          <dl class="details">
+            <div class="details__row">
+              <dt class="details__label">Telefone</dt>
+              <dd class="details__value">
+                <a href="tel:+5500000000000" id="contact-phone">(00) 0000-0000</a>
+              </dd>
+            </div>
+
+            <div class="details__row">
+              <dt class="details__label">Endereço</dt>
+              <dd class="details__value">
+                Rua Exemplo, 123 - Centro<br>
+                Cidade - UF, 00000-000
+              </dd>
+            </div>
+
+            <div class="details__row">
+              <dt class="details__label">Horário</dt>
+              <dd class="details__value">
+                Segunda a sexta, 8h às 18h<br>
+                Sábado, 8h às 12h
+              </dd>
+            </div>
+
+            <div class="details__row">
+              <dt class="details__label">Atendimento rápido</dt>
+              <dd class="details__value">Prefere conversar agora? Use o botão de WhatsApp na tela.</dd>
+            </div>
+          </dl>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <h2 class="site-footer__name" id="company-name">Minha Empresa Ltda.</h2>
+
+      <div class="site-footer__grid">
+        <div>
+          <h3 class="site-footer__heading">Endereço</h3>
+          <address class="site-footer__text" id="footer-address">
+            Rua Exemplo, 123 - Centro<br>
+            Cidade - UF, 00000-000
+          </address>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">E-mail</h3>
+          <a href="mailto:contato@exemplo.com.br" class="site-footer__link" id="footer-email">contato@exemplo.com.br</a>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">Navegação</h3>
+          <ul class="site-footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="site-footer__copy">&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+</body>
+</html>

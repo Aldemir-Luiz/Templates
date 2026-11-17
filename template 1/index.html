@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Móveis corporativos para escritórios: mesas, cadeiras ergonômicas, estações de trabalho e armários.">
+  <title>Home | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="header__brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="nav-toggle__button" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+            <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+            <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+            <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+            <li><a href="precos.html" class="nav__link">Preços</a></li>
+            <li><a href="contato.html" class="nav__link">Contato</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title" id="hero-title">Móveis que transformam seu escritório</h1>
+        <p class="hero__subtitle" id="hero-subtitle">
+          Mesas, cadeiras ergonômicas e estações de trabalho com qualidade, conforto e entrega para todo o Brasil.
+        </p>
+        <a href="produtos.html" class="btn btn--light" id="hero-cta-button">Ver produtos</a>
+      </div>
+    </section>
+
+    <!-- ========== CATEGORIAS ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Nossas categorias</h2>
+        <p class="section__subtitle">Tudo o que sua empresa precisa para um ambiente produtivo.</p>
+
+        <div class="grid grid--categories">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🪑</div>
+            <h3 class="card__title">Cadeiras ergonômicas</h3>
+            <p class="card__text">Conforto e saúde postural para longas jornadas de trabalho.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🖥️</div>
+            <h3 class="card__title">Mesas e estações</h3>
+            <p class="card__text">Mesas individuais, bancadas compartilhadas e estações modulares.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🗄️</div>
+            <h3 class="card__title">Armários e arquivos</h3>
+            <p class="card__text">Organização e segurança para documentos e materiais.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🛋️</div>
+            <h3 class="card__title">Recepção e descanso</h3>
+            <p class="card__text">Sofás, poltronas e balcões que valorizam a imagem da empresa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Por que escolher nossa loja?</h2>
+
+        <ul class="grid grid--features">
+          <li class="feature">
+            <strong class="feature__title">Projeto sob medida</strong>
+            <span class="feature__text">Planejamos o layout ideal para o seu espaço.</span>
+          </li>
+          <li class="feature">
+            <strong class="feature__title">Entrega e montagem</strong>
+            <span class="feature__text">Equipe especializada cuida de toda a instalação.</span>
+          </li>
+          <li class="feature">
+            <strong class="feature__title">Garantia estendida</strong>
+            <span class="feature__text">Produtos duráveis com suporte pós-venda.</span>
+          </li>
+          <li class="feature">
+            <strong class="feature__title">Condições para empresas</strong>
+            <span class="feature__text">Orçamentos especiais para grandes volumes.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="section cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title">Precisa mobiliar seu escritório?</h2>
+        <p class="cta__text">Fale com nossa equipe e receba um orçamento personalizado.</p>
+        <a href="contato.html" class="btn btn--primary">Solicitar orçamento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__col">
+        <h3 class="footer__title" id="company-name">Minha Empresa Ltda.</h3>
+        <p class="footer__text">Soluções em móveis corporativos.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Endereço</h4>
+        <address class="footer__text" id="footer-address">
+          Rua Exemplo, 123 - Centro<br>
+          Cidade - UF, 00000-000
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">E-mail</h4>
+        <a href="mailto:contato@exemplo.com.br" class="footer__link" id="footer-email">contato@exemplo.com.br</a>
+      </div>
+
+    </div>
+    <p class="footer__copy">&copy; 2026 Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+</body>
+</html>

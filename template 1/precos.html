@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confira nossos preços: kits completos para escritório, tabela por categoria e condições especiais de pagamento para empresas.">
+  <title>Preços | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="header__brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="nav-toggle__button" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+          <li><a href="precos.html" class="nav__link nav__link--active" aria-current="page">Preços</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== CABEÇALHO DA PÁGINA ========== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <h1 class="page-hero__title">Preços</h1>
+        <p class="page-hero__subtitle">
+          Valores transparentes e condições especiais para equipar o seu escritório.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== KITS COMPLETOS ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Kits para escritório</h2>
+        <p class="section__subtitle">Combinações prontas com o melhor custo-benefício.</p>
+
+        <div class="products-grid products-grid--kits" id="catalog-grid">
+
+          <!-- Kit 1 -->
+          <article class="product-card">
+            <img class="product-card__image" id="product-image" src="img/kit-1.jpg" alt="Kit Estação Individual" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Kit essencial</span>
+              <h3 class="product-card__title" id="product-title">Kit Estação Individual</h3>
+              <p class="product-card__description" id="product-description">Mesa de 1,20 m, cadeira ergonômica e gaveteiro com chave.</p>
+              <p class="product-card__price" id="product-price">R$ 1.890,00</p>
+              <p class="product-card__stock">Disponíveis: <span id="stock-quantity">14</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20no%20Kit%20Estacao%20Individual" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Kit 2 -->
+          <article class="product-card product-card--featured">
+            <img class="product-card__image" id="product-image" src="img/kit-2.jpg" alt="Kit Escritório Compacto" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Mais vendido</span>
+              <h3 class="product-card__title" id="product-title">Kit Escritório Compacto</h3>
+              <p class="product-card__description" id="product-description">4 estações de trabalho, 4 cadeiras e 1 armário alto para equipes pequenas.</p>
+              <p class="product-card__price" id="product-price">R$ 6.490,00</p>
+              <p class="product-card__stock">Disponíveis: <span id="stock-quantity">6</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20no%20Kit%20Escritorio%20Compacto" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Kit 3 -->
+          <article class="product-card">
+            <img class="product-card__image" id="product-image" src="img/kit-3.jpg" alt="Kit Sala de Reunião" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Kit reunião</span>
+              <h3 class="product-card__title" id="product-title">Kit Sala de Reunião</h3>
+              <p class="product-card__description" id="product-description">Mesa para 8 pessoas, 8 cadeiras e armário credenza.</p>
+              <p class="product-card__price" id="product-price">R$ 7.990,00</p>
+              <p class="product-card__stock">Disponíveis: <span id="stock-quantity">3</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20no%20Kit%20Sala%20de%20Reuniao" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TABELA DE PREÇOS POR CATEGORIA ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Tabela de preços por categoria</h2>
+        <p class="section__subtitle">Valores de referência. Consulte condições para grandes volumes.</p>
+
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <caption class="visually-hidden">Faixas de preço por categoria de produto</caption>
+            <thead>
+              <tr>
+                <th scope="col">Categoria</th>
+                <th scope="col">Item de entrada</th>
+                <th scope="col">Item premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Cadeiras</th>
+                <td>a partir de R$ 590,00</td>
+                <td>até R$ 2.490,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Mesas e estações</th>
+                <td>a partir de R$ 390,00</td>
+                <td>até R$ 3.200,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Armários e arquivos</th>
+                <td>a partir de R$ 690,00</td>
+                <td>até R$ 2.100,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Estantes</th>
+                <td>a partir de R$ 890,00</td>
+                <td>até R$ 1.900,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Recepção e descanso</th>
+                <td>a partir de R$ 690,00</td>
+                <td>até R$ 4.500,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONDIÇÕES DE PAGAMENTO ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Condições de pagamento</h2>
+
+        <ul class="grid grid--features payment">
+          <li class="feature">
+            <strong class="feature__title">Pix com desconto</strong>
+            <span class="feature__text">Condição especial para pagamento à vista.</span>
+          </li>
+          <li class="feature">
+            <strong class="feature__title">Cartão em até 12x</strong>
+            <span class="feature__text">Parcele sua compra em até 12 vezes.</span>
+          </li>
+          <li class="feature">
+            <strong class="feature__title">Faturamento para empresas</strong>
+            <span class="feature__text">Pagamento em boleto com CNPJ, mediante análise.</span>
+          </li>
+          <li class="feature">
+            <strong class="feature__title">Desconto por volume</strong>
+            <span class="feature__text">Propostas diferenciadas para grandes quantidades.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="section cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title">Quer um orçamento sob medida?</h2>
+        <p class="cta__text">Informe suas necessidades e montamos uma proposta personalizada.</p>
+        <a href="contato.html" class="btn btn--primary">Solicitar orçamento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__col">
+        <h3 class="footer__title" id="company-name">Minha Empresa Ltda.</h3>
+        <p class="footer__text">Soluções em móveis corporativos.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Endereço</h4>
+        <address class="footer__text" id="footer-address">
+          Rua Exemplo, 123 - Centro<br>
+          Cidade - UF, 00000-000
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">E-mail</h4>
+        <a href="mailto:contato@exemplo.com.br" class="footer__link" id="footer-email">contato@exemplo.com.br</a>
+      </div>
+
+    </div>
+    <p class="footer__copy">&copy; 2026 Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+</body>
+</html>

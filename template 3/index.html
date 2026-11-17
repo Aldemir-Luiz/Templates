@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Móveis de Escritório Premium</title>
+
+  <!-- REQUISITO TÉCNICO: Importação em Ordem Estrita -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER (Glassmorphism) ========== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- ID OBRIGATÓRIO: Logo -->
+      <a href="index.html" class="brand font-serif" id="logo">Maison Office</a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <div class="hidden md:flex items-center gap-8">
+          <a class="link-underline" href="catalogo.html">Coleções</a>
+          <a class="link-underline" href="projetos.html">Projetos Corporativos</a>
+          <a class="link-underline" href="contato.html">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <!-- Background com Ken Burns e Overlay -->
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Escritório de alto padrão" class="hero__img">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content text-white">
+        <p class="eyebrow text-white">Curadoria para Ambientes Corporativos</p>
+        
+        <!-- IDs OBRIGATÓRIOS: Textos Hero -->
+        <h1 class="font-serif hero__title" id="hero-title">
+          Objetos de <br><span style="font-style: italic; font-weight: 300;">Beleza Silenciosa</span>
+        </h1>
+        
+        <p class="hero__subtitle" id="hero-subtitle">
+          Mobiliário de escritório e peças de design feitas à mão, criadas para trazer foco, conforto e intenção para a sua jornada de trabalho.
+        </p>
+        
+        <!-- ID OBRIGATÓRIO: CTA Hero -->
+        <a href="catalogo.html" class="btn btn--primary" id="hero-cta-button">Explorar Coleção</a>
+      </div>
+    </section>
+
+    <!-- ========== LATEST PRODUCTS (Grid) ========== -->
+    <section class="section">
+      <div class="container">
+        <div style="margin-bottom: 3.5rem;">
+          <p class="eyebrow" style="color: var(--foreground);">Recém Chegados</p>
+          <h2 class="font-serif" style="font-size: var(--font-size-h2);">Últimas Peças</h2>
+        </div>
+
+        <div class="grid-4">
+          <!-- Card de Produto 1 -->
+          <article class="product-card">
+            <a href="#">
+              <div class="product-card__media">
+                <!-- Imagem Principal -->
+                <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=80" alt="Cadeira Executiva" class="product-card__img-main">
+                <!-- Imagem de Hover (Uso/Detalhe) -->
+                <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=800&q=80" alt="Cadeira Executiva Detalhe" class="product-card__img-hover">
+                
+                <span class="product-card__badge">Destaque</span>
+                
+                <div class="product-card__action">
+                  <span>Ver Detalhes</span>
+                </div>
+              </div>
+              <div>
+                <p class="eyebrow" style="margin-bottom: 0.5rem;">Assentos</p>
+                <h3 class="font-serif" style="font-size: var(--font-size-lg);">Cadeira Executiva Noir</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-top: 0.25rem;">Couro natural e estrutura em aço carbono.</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card de Produto 2 -->
+          <article class="product-card">
+            <a href="#">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80" alt="Mesa Diretoria" class="product-card__img-main">
+                <img src="https://images.unsplash.com/photo-1497215848145-5afd5afdd024?w=800&q=80" alt="Mesa Diretoria Ambiente" class="product-card__img-hover">
+                
+                <span class="product-card__badge" style="background: var(--foreground); color: var(--bg-color);">Novo</span>
+                
+                <div class="product-card__action">
+                  <span>Ver Detalhes</span>
+                </div>
+              </div>
+              <div>
+                <p class="eyebrow" style="margin-bottom: 0.5rem;">Mesas</p>
+                <h3 class="font-serif" style="font-size: var(--font-size-lg);">Mesa Diretoria Carvalho</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-top: 0.25rem;">Madeira maciça esculpida à mão.</p>
+              </div>
+            </a>
+          </article>
+          
+          <!-- Placeholder de Layout para os demais (em produção a engine geraria via loop) -->
+          <article class="product-card"><a href="#"><div class="product-card__media" style="background-image: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80'); background-size: cover;"><div class="product-card__action"><span>Ver Detalhes</span></div></div><div><p class="eyebrow" style="margin-bottom: 0.5rem;">Iluminação</p><h3 class="font-serif" style="font-size: var(--font-size-lg);">Luminária Pendente Arc</h3></div></a></article>
+          <article class="product-card"><a href="#"><div class="product-card__media" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80'); background-size: cover;"><div class="product-card__action"><span>Ver Detalhes</span></div></div><div><p class="eyebrow" style="margin-bottom: 0.5rem;">Objetos</p><h3 class="font-serif" style="font-size: var(--font-size-lg);">Vaso Escultural</h3></div></a></article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <!-- ID OBRIGATÓRIO: Nome da Empresa no Rodapé -->
+        <h2 class="font-serif brand" id="company-name" style="margin-bottom: 1rem;">Maison Office Ltda.</h2>
+        <p style="color: rgba(255,255,255,0.7); max-width: 300px; font-size: var(--font-size-sm);">Mobiliário curado para espaços corporativos de excelência.</p>
+      </div>
+
+      <div>
+        <p class="eyebrow" style="color: rgba(255,255,255,0.4);">Contato & Endereço</p>
+        <!-- ID OBRIGATÓRIO: Endereço do Rodapé -->
+        <address id="footer-address" style="font-size: var(--font-size-sm); margin-bottom: 0.5rem; color: rgba(255,255,255,0.8);">
+          Av. Empresarial, 1000 - Andar 12<br>São Paulo - SP, 00000-000
+        </address>
+        <!-- ID OBRIGATÓRIO: E-mail do Rodapé -->
+        <a href="mailto:contato@maisonoffice.com.br" id="footer-email" class="link-underline" style="color: var(--text-on-primary);">
+          contato@maisonoffice.com.br
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="site-footer__copy">© 2026 Maison Office. Desenvolvido para a plataforma.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP (ID OBRIGATÓRIO) ========== -->
+  <a href="https://wa.me/5500000000000" id="whatsapp-contact" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    Fale Conosco
+  </a>
+
+</body>
+</html>

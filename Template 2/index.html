@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Móveis para escritório com design autoral: mesas, cadeiras, estações e armários para ambientes de trabalho de verdade.">
+  <title>Home | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a href="index.html" class="brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile em tela cheia (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="menu-button" aria-hidden="true">Menu</label>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="main-nav__list">
+          <li><a href="index.html" class="main-nav__link main-nav__link--active" aria-current="page">Home</a></li>
+          <li><a href="sobre.html" class="main-nav__link">Sobre</a></li>
+          <li><a href="produtos.html" class="main-nav__link">Produtos</a></li>
+          <li><a href="precos.html" class="main-nav__link">Preços</a></li>
+          <li><a href="contato.html" class="main-nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <p class="eyebrow">Mobiliário corporativo autoral</p>
+          <h1 class="hero__title" id="hero-title">O escritório é onde as ideias moram</h1>
+          <p class="hero__subtitle" id="hero-subtitle">
+            Peças desenhadas para durar, com materiais nobres, acabamento preciso e atendimento do projeto à montagem.
+          </p>
+          <div class="hero__actions">
+            <a href="produtos.html" class="btn btn--solid" id="hero-cta-button">Explorar coleção</a>
+            <a href="sobre.html" class="link-arrow">Conhecer a loja</a>
+          </div>
+        </div>
+
+        <!-- Espaço reservado para imagem principal -->
+        <div class="hero__frame" role="img" aria-label="Imagem ilustrativa de um ambiente de escritório">
+          <span class="hero__frame-number">N&ordm; 01</span>
+          <span class="hero__frame-label">Coleção Atelier</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== FAIXA DE PALAVRAS ========== -->
+    <section class="strip" aria-label="Destaques">
+      <ul class="container strip__list">
+        <li>Design funcional</li>
+        <li>Materiais nobres</li>
+        <li>Entrega e montagem</li>
+        <li>Garantia estendida</li>
+      </ul>
+    </section>
+
+    <!-- ========== COLEÇÕES (LISTA NUMERADA) ========== -->
+    <section class="block">
+      <div class="container">
+        <p class="eyebrow">Coleções</p>
+        <h2 class="block__title">Tudo para compor o seu espaço</h2>
+
+        <ol class="index">
+          <li>
+            <a href="produtos.html" class="index__row">
+              <span class="index__number">01</span>
+              <span class="index__name">Cadeiras ergonômicas</span>
+              <span class="index__text">Postura e conforto para jornadas longas.</span>
+              <span class="index__arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="produtos.html" class="index__row">
+              <span class="index__number">02</span>
+              <span class="index__name">Mesas e estações</span>
+              <span class="index__text">Individuais, compartilhadas e modulares.</span>
+              <span class="index__arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="produtos.html" class="index__row">
+              <span class="index__number">03</span>
+              <span class="index__name">Armários e arquivos</span>
+              <span class="index__text">Organização e segurança para o dia a dia.</span>
+              <span class="index__arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="produtos.html" class="index__row">
+              <span class="index__number">04</span>
+              <span class="index__name">Recepção e descanso</span>
+              <span class="index__text">A primeira impressão da sua empresa.</span>
+              <span class="index__arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== MANIFESTO ========== -->
+    <section class="block block--surface">
+      <div class="container manifesto">
+        <p class="eyebrow">Nosso jeito</p>
+        <p class="manifesto__text">
+          Acreditamos que um bom móvel não chama atenção para si, ele libera a atenção das pessoas para o que realmente importa: o trabalho.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== COMO FUNCIONA ========== -->
+    <section class="block">
+      <div class="container">
+        <p class="eyebrow">Processo</p>
+        <h2 class="block__title">Do briefing à montagem</h2>
+
+        <ol class="steps">
+          <li class="steps__item">
+            <span class="steps__number">1</span>
+            <h3 class="steps__title">Conversa e medição</h3>
+            <p class="steps__text">Entendemos sua equipe, seu espaço e seu orçamento.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number">2</span>
+            <h3 class="steps__title">Projeto e proposta</h3>
+            <p class="steps__text">Você recebe o layout e as peças sugeridas com valores claros.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number">3</span>
+            <h3 class="steps__title">Entrega e instalação</h3>
+            <p class="steps__text">Nossa equipe monta tudo e deixa o ambiente pronto para uso.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="closing">
+      <div class="container closing__inner">
+        <h2 class="closing__title">Vamos desenhar o seu escritório?</h2>
+        <a href="contato.html" class="btn btn--invert">Pedir orçamento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <h2 class="site-footer__name" id="company-name">Minha Empresa Ltda.</h2>
+
+      <div class="site-footer__grid">
+        <div>
+          <h3 class="site-footer__heading">Endereço</h3>
+          <address class="site-footer__text" id="footer-address">
+            Rua Exemplo, 123 - Centro<br>
+            Cidade - UF, 00000-000
+          </address>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">E-mail</h3>
+          <a href="mailto:contato@exemplo.com.br" class="site-footer__link" id="footer-email">contato@exemplo.com.br</a>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">Navegação</h3>
+          <ul class="site-footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="site-footer__copy">&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+</body>
+</html>

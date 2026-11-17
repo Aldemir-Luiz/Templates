@@ -1,0 +1,46 @@
+/* =========================================================
+   styleguide.css
+   Variáveis da Marca (Estética "Maison" Editorial)
+   ========================================================= */
+
+:root {
+  /* ---- Cores Base ---- */
+  --bg-color: #faf9f7;             /* Linen (Fundo principal claro) */
+  --foreground: #1a1a1a;           /* Charcoal (Texto escuro) */
+  
+  /* ---- Cores de Marca ---- */
+  --primary-color: #1a1a1a;        /* Botões principais e destaques */
+  --text-on-primary: #faf9f7;      /* Texto sobre botões escuros */
+  --secondary-color: #e5e5e5;      /* Bordas e linhas sutis */
+  
+  /* ---- Cores de Apoio ---- */
+  --muted-bg: #f0eee9;             /* Fundo de cards/produtos */
+  --text-muted: #737373;           /* Textos descritivos secundários */
+  --whatsapp-color: #25d366;       /* Cor padrão global do WhatsApp */
+  --overlay-dark: rgba(26, 26, 26, 0.4); /* Gradientes sobre imagens */
+
+  /* ---- Tipografia ---- */
+  /* Sans-serif para UI, botões e descrições técnicas */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Serif elegante para títulos (a "alma" deste design) */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  
+  --font-size-base: 1rem;
+  --font-size-xs: 0.6875rem;       /* 11px - Eyebrows */
+  --font-size-sm: 0.875rem;        /* 14px */
+  --font-size-lg: 1.125rem;        /* 18px */
+  
+  /* Tipografia fluida para títulos Gigantes */
+  --font-size-h1: clamp(3rem, 8vw, 7rem);
+  --font-size-h2: clamp(2.5rem, 5vw, 4rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.5rem);
+
+  /* ---- Espaçamentos e Layout ---- */
+  --tracking-widest: 0.3em;        /* Espaçamento super largo para luxo */
+  --tracking-wide: 0.15em;
+  
+  --container-width: 1440px;
+  --container-padding: 2rem;
+  --transition-slow: 1s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.3s ease;
+}

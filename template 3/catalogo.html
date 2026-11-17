@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | Maison Office</title>
+
+  <!-- Ordem rigorosa exigida pela arquitetura -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand font-serif" id="logo">Maison Office</a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <div class="hidden md:flex items-center gap-8">
+          <a class="link-underline" href="catalogo.html" aria-current="page" style="color: var(--foreground);">Coleções</a>
+          <a class="link-underline" href="#">Projetos Corporativos</a>
+          <a class="link-underline" href="contato.html">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== PAGE HEAD ========== -->
+    <section class="section" style="padding-bottom: 2rem; padding-top: 6rem;">
+      <div class="container text-center">
+        <p class="eyebrow" style="color: var(--foreground);">Catálogo Completo</p>
+        <h1 class="font-serif" style="font-size: var(--font-size-h2); margin-bottom: 1.5rem;">Nossas Coleções</h1>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+          Explore nossa seleção de mobiliário executivo e objetos de design, concebidos para transformar seu espaço de trabalho.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== CATALOG GRID ========== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        
+        <!-- ID OBRIGATÓRIO: Grid do Catálogo -->
+        <div class="grid-4" id="catalog-grid">
+          
+          <!-- INÍCIO DO TEMPLATE DE CARD (A Engine repete este bloco) -->
+          <article class="product-card">
+            <a href="#">
+              <div class="product-card__media">
+                <!-- ID OBRIGATÓRIO: Imagem -->
+                <img src="{{engine_img_src}}" alt="{{engine_img_alt}}" class="product-card__img-main" id="product-image">
+                
+                <!-- Imagem de Hover Opcional (Se a engine suportar 2 imagens) -->
+                <img src="{{engine_img_hover_src}}" alt="" class="product-card__img-hover" aria-hidden="true">
+                
+                <span class="product-card__badge" style="background: var(--foreground); color: var(--bg-color);">{{engine_categoria_badge}}</span>
+                
+                <div class="product-card__action">
+                  <!-- ID OBRIGATÓRIO: Botão de Compra/Interesse -->
+                  <span id="buy-button">Tenho Interesse</span>
+                </div>
+              </div>
+              <div style="padding-top: 0.5rem;">
+                <!-- ID OBRIGATÓRIO: Título -->
+                <h3 class="font-serif" style="font-size: var(--font-size-lg);" id="product-title">{{engine_produto_nome}}</h3>
+                
+                <!-- ID OBRIGATÓRIO: Descrição (truncada para design limpo) -->
+                <p style="font-size: var(--font-size-sm); color: var(--text-muted); margin-top: 0.25rem; display: -webkit-box; -webkit-line-clamp: 2; overflow: hidden; -webkit-box-orient: vertical;" id="product-description">
+                  {{engine_produto_desc}}
+                </p>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--secondary-color);">
+                  <!-- ID OBRIGATÓRIO: Preço -->
+                  <span style="font-weight: 500; font-size: var(--font-size-sm);" id="product-price">R$ {{engine_preco}}</span>
+                  
+                  <!-- ID OBRIGATÓRIO: Estoque -->
+                  <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
+                    Disp: <span id="stock-quantity">{{engine_estoque}}</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- FIM DO TEMPLATE DE CARD -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <h2 class="font-serif brand" id="company-name" style="margin-bottom: 1rem;">Maison Office Ltda.</h2>
+        <p style="color: rgba(255,255,255,0.7); max-width: 300px; font-size: var(--font-size-sm);">Mobiliário curado para espaços corporativos de excelência.</p>
+      </div>
+
+      <div>
+        <p class="eyebrow" style="color: rgba(255,255,255,0.4);">Contato & Endereço</p>
+        <address id="footer-address" style="font-size: var(--font-size-sm); margin-bottom: 0.5rem; color: rgba(255,255,255,0.8);">
+          Av. Empresarial, 1000 - Andar 12<br>São Paulo - SP, 00000-000
+        </address>
+        <a href="mailto:contato@maisonoffice.com.br" id="footer-email" class="link-underline" style="color: var(--text-on-primary);">
+          contato@maisonoffice.com.br
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="site-footer__copy">© 2026 Maison Office. Desenvolvido para a plataforma.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5500000000000" id="whatsapp-contact" class="whatsapp-float" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
+
+</body>
+</html>

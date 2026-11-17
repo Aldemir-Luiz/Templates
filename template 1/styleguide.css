@@ -1,0 +1,56 @@
+/* =========================================================
+   styleguide.css
+   Design tokens da marca. A engine multi-tenant sobrescreve
+   estas variáveis por cliente. Único arquivo com cores literais.
+   ========================================================= */
+
+:root {
+  /* ---- Cores de marca (alvo principal da engine) ---- */
+  --primary-color: #1f4e79;
+  --secondary-color: #f28c28;
+  --bg-color: #ffffff;
+  --text-color: #1c2430;
+
+  /* ---- Cores de apoio ---- */
+  --surface-color: #f3f5f8;      /* fundos alternativos e cards */
+  --border-color: #dde2ea;
+  --text-muted-color: #5b6677;
+  --text-on-primary: #ffffff;    /* texto sobre fundos de marca */
+  --text-on-dark: #ffffff;
+  --footer-bg-color: #14202e;
+  --whatsapp-color: #25d366;
+  --shadow-color: rgba(20, 32, 46, 0.12);
+
+  /* ---- Tipografia ---- */
+  --font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.125rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.625rem;
+  --font-size-h3: 1.25rem;
+
+  /* ---- Espaçamentos ---- */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+
+  /* ---- Layout, bordas e sombras ---- */
+  --container-width: 1160px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --shadow-md: 0 6px 20px var(--shadow-color);
+  --transition: 0.25s ease;
+}
+
+/* Tipografia escalável em telas maiores */
+@media (min-width: 768px) {
+  :root {
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.125rem;
+  }
+}

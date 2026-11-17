@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça nossa coleção de móveis para escritório: mesas, cadeiras, estantes, armários e muito mais.">
+  <title>Produtos | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="header__brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="nav-toggle__button" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="produtos.html" class="nav__link nav__link--active" aria-current="page">Produtos</a></li>
+          <li><a href="precos.html" class="nav__link">Preços</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TÍTULO DA PÁGINA ========== -->
+    <section class="catalog-header">
+      <div class="container">
+        <h1 class="catalog-header__title">Nossos produtos</h1>
+        <p class="catalog-header__subtitle">Móveis funcionais e confortáveis pensados para o seu escritório.</p>
+      </div>
+    </section>
+
+    <!-- ========== FILTROS ========== -->
+    <section class="container">
+      <div class="filters">
+
+        <label class="visually-hidden" for="filter-search">Buscar produto</label>
+        <input type="search" id="filter-search" class="filters__search" placeholder="Buscar por nome ou material...">
+
+        <div class="filters__chips" role="group" aria-label="Filtrar por categoria">
+          <button type="button" class="chip chip--active" data-filter="todas">Todas</button>
+          <button type="button" class="chip" data-filter="cadeiras">Cadeiras</button>
+          <button type="button" class="chip" data-filter="mesas">Mesas</button>
+          <button type="button" class="chip" data-filter="armarios">Armários</button>
+          <button type="button" class="chip" data-filter="estantes">Estantes</button>
+          <button type="button" class="chip" data-filter="recepcao">Recepção</button>
+        </div>
+
+        <label class="visually-hidden" for="filter-sort">Ordenar por</label>
+        <select id="filter-sort" class="filters__sort">
+          <option value="price-asc">Menor preço</option>
+          <option value="price-desc">Maior preço</option>
+          <option value="name-asc">Nome (A-Z)</option>
+        </select>
+
+      </div>
+    </section>
+
+    <!-- ========== GRADE DE PRODUTOS ========== -->
+    <section class="section catalog">
+      <div class="container">
+
+        <div class="products-grid" id="catalog-grid">
+
+          <!-- Card 1 -->
+          <article class="product-card" data-category="mesas" data-price="390">
+            <img class="product-card__image" id="product-image" src="img/produto-1.jpg" alt="Mesa auxiliar Pingo" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Mesas</span>
+              <h2 class="product-card__title" id="product-title">Mesa auxiliar Pingo</h2>
+              <p class="product-card__description" id="product-description">Mesa lateral compacta em MDF, ideal para apoio.</p>
+              <p class="product-card__price" id="product-price">R$ 390,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">12</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20Mesa%20auxiliar%20Pingo" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card" data-category="cadeiras" data-price="590">
+            <img class="product-card__image" id="product-image" src="img/produto-2.jpg" alt="Cadeira Curva" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Cadeiras</span>
+              <h2 class="product-card__title" id="product-title">Cadeira Curva</h2>
+              <p class="product-card__description" id="product-description">Cadeira de apoio com assento acolchoado e estrutura metálica.</p>
+              <p class="product-card__price" id="product-price">R$ 590,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">20</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20Cadeira%20Curva" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card" data-category="recepcao" data-price="690">
+            <img class="product-card__image" id="product-image" src="img/produto-3.jpg" alt="Banco de recepção Ninho" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Recepção</span>
+              <h2 class="product-card__title" id="product-title">Banco de recepção Ninho</h2>
+              <p class="product-card__description" id="product-description">Banco estofado para áreas de espera e recepção.</p>
+              <p class="product-card__price" id="product-price">R$ 690,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">8</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20no%20Banco%20de%20recepcao%20Ninho" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card" data-category="armarios" data-price="990">
+            <img class="product-card__image" id="product-image" src="img/produto-4.jpg" alt="Armário baixo Trama" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Armários</span>
+              <h2 class="product-card__title" id="product-title">Armário baixo Trama</h2>
+              <p class="product-card__description" id="product-description">Armário com duas portas e chave, ótimo para arquivos.</p>
+              <p class="product-card__price" id="product-price">R$ 990,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">6</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20no%20Armario%20baixo%20Trama" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card" data-category="estantes" data-price="1290">
+            <img class="product-card__image" id="product-image" src="img/produto-5.jpg" alt="Estante Horizonte" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Estantes</span>
+              <h2 class="product-card__title" id="product-title">Estante Horizonte</h2>
+              <p class="product-card__description" id="product-description">Estante modular com nichos para livros e pastas.</p>
+              <p class="product-card__price" id="product-price">R$ 1.290,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">10</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20Estante%20Horizonte" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card" data-category="cadeiras" data-price="1490">
+            <img class="product-card__image" id="product-image" src="img/produto-6.jpg" alt="Cadeira ergonômica Raiz" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Cadeiras</span>
+              <h2 class="product-card__title" id="product-title">Cadeira ergonômica Raiz</h2>
+              <p class="product-card__description" id="product-description">Cadeira presidente com regulagem de altura e encosto em tela.</p>
+              <p class="product-card__price" id="product-price">R$ 1.490,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">15</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20Cadeira%20ergonomica%20Raiz" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="product-card" data-category="mesas" data-price="1890">
+            <img class="product-card__image" id="product-image" src="img/produto-7.jpg" alt="Mesa de reunião Brisa" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Mesas</span>
+              <h2 class="product-card__title" id="product-title">Mesa de reunião Brisa</h2>
+              <p class="product-card__description" id="product-description">Mesa para até 6 pessoas com tampo amadeirado.</p>
+              <p class="product-card__price" id="product-price">R$ 1.890,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">4</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20Mesa%20de%20reuniao%20Brisa" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="product-card" data-category="recepcao" data-price="2990">
+            <img class="product-card__image" id="product-image" src="img/produto-8.jpg" alt="Sofá modular Aurora" loading="lazy">
+            <div class="product-card__body">
+              <span class="product-card__category">Recepção</span>
+              <h2 class="product-card__title" id="product-title">Sofá modular Aurora</h2>
+              <p class="product-card__description" id="product-description">Sofá de 3 lugares em tecido, perfeito para recepções.</p>
+              <p class="product-card__price" id="product-price">R$ 2.990,00</p>
+              <p class="product-card__stock">Estoque: <span id="stock-quantity">3</span></p>
+              <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20no%20Sofa%20modular%20Aurora" class="btn-outline" id="buy-button" target="_blank" rel="noopener noreferrer">Tenho interesse</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="catalog__empty" id="catalog-empty" hidden>Nenhum produto encontrado para essa busca.</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__col">
+        <h3 class="footer__title" id="company-name">Minha Empresa Ltda.</h3>
+        <p class="footer__text">Soluções em móveis corporativos.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Endereço</h4>
+        <address class="footer__text" id="footer-address">
+          Rua Exemplo, 123 - Centro<br>
+          Cidade - UF, 00000-000
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">E-mail</h4>
+        <a href="mailto:contato@exemplo.com.br" class="footer__link" id="footer-email">contato@exemplo.com.br</a>
+      </div>
+
+    </div>
+    <p class="footer__copy">&copy; 2026 Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+  <!-- ========== FILTROS (JS mínimo, lê o DOM, não depende dos dados) ========== -->
+  <script>
+    (function () {
+      var grid = document.getElementById('catalog-grid');
+      if (!grid) return;
+
+      var search = document.getElementById('filter-search');
+      var sort = document.getElementById('filter-sort');
+      var chips = document.querySelectorAll('.chip');
+      var empty = document.getElementById('catalog-empty');
+      var activeCategory = 'todas';
+
+      function apply() {
+        var cards = Array.prototype.slice.call(grid.querySelectorAll('.product-card'));
+        var term = search.value.trim().toLowerCase();
+
+        // Ordenação
+        cards.sort(function (a, b) {
+          var pa = parseFloat(a.dataset.price), pb = parseFloat(b.dataset.price);
+          if (sort.value === 'price-desc') return pb - pa;
+          if (sort.value === 'name-asc') {
+            return a.querySelector('.product-card__title').textContent
+              .localeCompare(b.querySelector('.product-card__title').textContent, 'pt-BR');
+          }
+          return pa - pb;
+        });
+
+        // Filtro + reinserção na ordem
+        var visible = 0;
+        cards.forEach(function (card) {
+          var matchCategory = activeCategory === 'todas' || card.dataset.category === activeCategory;
+          var matchTerm = !term || card.textContent.toLowerCase().indexOf(term) !== -1;
+          var show = matchCategory && matchTerm;
+          card.hidden = !show;
+          if (show) visible++;
+          grid.appendChild(card);
+        });
+
+        empty.hidden = visible > 0;
+      }
+
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          chips.forEach(function (c) { c.classList.remove('chip--active'); });
+          chip.classList.add('chip--active');
+          activeCategory = chip.dataset.filter;
+          apply();
+        });
+      });
+
+      search.addEventListener('input', apply);
+      sort.addEventListener('change', apply);
+      apply();
+    })();
+  </script>
+
+</body>
+</html>
