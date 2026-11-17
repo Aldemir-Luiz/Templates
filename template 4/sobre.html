@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça nossa história, missão, visão, valores e os marcos da nossa trajetória em mobiliário corporativo.">
+  <title>Sobre | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== BARRA DE UTILIDADES ========== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Atendimento de segunda a sexta, das 8h às 18h</span>
+      <span class="topbar__highlight">Orçamento em até 24 horas</span>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile em gaveta lateral (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="drawer-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <label for="nav-toggle" class="drawer-overlay" aria-hidden="true"></label>
+
+      <nav class="drawer" aria-label="Navegação principal">
+        <ul class="drawer__list">
+          <li><a href="index.html" class="drawer__link">Home</a></li>
+          <li><a href="sobre.html" class="drawer__link drawer__link--active" aria-current="page">Sobre</a></li>
+          <li><a href="produtos.html" class="drawer__link">Produtos</a></li>
+          <li><a href="precos.html" class="drawer__link">Preços</a></li>
+          <li><a href="contato.html" class="drawer__link">Contato</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--accent drawer__cta">Solicitar proposta</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== BANNER DA PÁGINA ========== -->
+    <section class="page-banner">
+      <div class="container">
+        <nav class="crumbs" aria-label="Você está aqui">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Sobre</span>
+        </nav>
+        <h1 class="page-banner__title">Conheça quem equipa escritórios por todo o país</h1>
+        <p class="page-banner__lead">
+          Somos especialistas em mobiliário corporativo, com projeto, entrega e montagem para empresas de todos os portes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== NOSSA HISTÓRIA ========== -->
+    <section class="section">
+      <div class="container about">
+
+        <!-- Espaço reservado para foto da empresa/showroom -->
+        <div class="about__media" role="img" aria-label="Imagem ilustrativa do showroom da empresa">
+          <span class="about__media-label">Showroom</span>
+          <div class="about__badge">
+            <strong>+10</strong>
+            <span>anos de mercado</span>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="tag tag--dark">Nossa história</p>
+          <h2 class="section__title">Uma empresa construída sobre confiança e prazo</h2>
+          <p>
+            Nascemos com o propósito de ajudar empresas a criar ambientes de trabalho funcionais, confortáveis e alinhados à sua identidade. Com o tempo, ampliamos o portfólio e consolidamos parcerias com fabricantes certificados.
+          </p>
+          <p>
+            Hoje atendemos desde pequenos escritórios até operações corporativas completas, sempre com uma equipe própria de consultores, projetistas e montadores.
+          </p>
+          <a href="contato.html" class="btn btn--primary about__cta">Falar com um consultor</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== MISSÃO, VISÃO E VALORES ========== -->
+    <section class="section section--tint">
+      <div class="container">
+        <header class="section__head">
+          <p class="tag tag--dark">Nossos pilares</p>
+          <h2 class="section__title">O que nos move todos os dias</h2>
+        </header>
+
+        <div class="pillars">
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">01</span>
+            <h3 class="pillar__title">Missão</h3>
+            <p class="pillar__text">Oferecer móveis corporativos de qualidade que tornem o trabalho mais confortável, produtivo e seguro.</p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">02</span>
+            <h3 class="pillar__title">Visão</h3>
+            <p class="pillar__text">Ser a referência nacional em mobiliário para escritórios, reconhecida pela confiança e pelo atendimento próximo.</p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__icon" aria-hidden="true">03</span>
+            <h3 class="pillar__title">Valores</h3>
+            <p class="pillar__text">Ética, transparência, compromisso com prazos, respeito ao cliente e melhoria contínua.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NÚMEROS ========== -->
+    <section class="facts" aria-label="Nossos números">
+      <div class="container">
+        <ul class="facts__list">
+          <li class="facts__item">
+            <strong class="facts__number">+2.000</strong>
+            <span class="facts__label">empresas atendidas</span>
+          </li>
+          <li class="facts__item">
+            <strong class="facts__number">+500</strong>
+            <span class="facts__label">escritórios entregues</span>
+          </li>
+          <li class="facts__item">
+            <strong class="facts__number">+30</strong>
+            <span class="facts__label">profissionais na equipe</span>
+          </li>
+          <li class="facts__item">
+            <strong class="facts__number">98%</strong>
+            <span class="facts__label">de clientes satisfeitos</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== MARCOS DA TRAJETÓRIA ========== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="tag tag--dark">Trajetória</p>
+          <h2 class="section__title">Marcos que contam a nossa história</h2>
+        </header>
+
+        <ol class="milestones">
+          <li class="milestones__item">
+            <span class="milestones__year">2015</span>
+            <div class="milestones__body">
+              <h3 class="milestones__title">Fundação</h3>
+              <p class="milestones__text">Início das operações com foco em mesas e cadeiras para pequenos escritórios.</p>
+            </div>
+          </li>
+          <li class="milestones__item">
+            <span class="milestones__year">2018</span>
+            <div class="milestones__body">
+              <h3 class="milestones__title">Showroom próprio</h3>
+              <p class="milestones__text">Inauguração do espaço de exposição para clientes testarem os produtos.</p>
+            </div>
+          </li>
+          <li class="milestones__item">
+            <span class="milestones__year">2021</span>
+            <div class="milestones__body">
+              <h3 class="milestones__title">Projetos corporativos</h3>
+              <p class="milestones__text">Criação da equipe de projetos para atender operações de grande porte.</p>
+            </div>
+          </li>
+          <li class="milestones__item">
+            <span class="milestones__year">2025</span>
+            <div class="milestones__body">
+              <h3 class="milestones__title">Atendimento nacional</h3>
+              <p class="milestones__text">Entrega e montagem em todo o Brasil, com suporte pós-venda dedicado.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Vamos planejar o seu escritório?</h2>
+          <p class="cta-band__text">Fale com um consultor e receba uma proposta personalizada.</p>
+        </div>
+        <a href="contato.html" class="btn btn--accent">Falar com consultor</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__col footer__col--wide">
+        <h2 class="footer__name" id="company-name">Minha Empresa Ltda.</h2>
+        <p class="footer__text">Soluções completas em mobiliário corporativo para empresas de todos os portes.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Endereço</h3>
+        <address class="footer__text" id="footer-address">
+          Rua Exemplo, 123 - Centro<br>
+          Cidade - UF, 00000-000
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">E-mail</h3>
+        <a href="mailto:contato@exemplo.com.br" class="footer__link" id="footer-email">contato@exemplo.com.br</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Navegação</h3>
+        <ul class="footer__nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="precos.html">Preços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bar">
+      <p class="container">&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+</body>
+</html>

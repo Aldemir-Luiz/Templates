@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Móveis corporativos para escritórios: mesas, cadeiras ergonômicas, estações de trabalho e projeto sob medida para sua empresa.">
+  <title>Home | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== BARRA DE UTILIDADES ========== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Atendimento de segunda a sexta, das 8h às 18h</span>
+      <span class="topbar__highlight">Orçamento em até 24 horas</span>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__brand" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile em gaveta lateral (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="drawer-toggle" aria-label="Abrir menu">
+      <label for="nav-toggle" class="burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <label for="nav-toggle" class="drawer-overlay" aria-hidden="true"></label>
+
+      <nav class="drawer" aria-label="Navegação principal">
+        <ul class="drawer__list">
+          <li><a href="index.html" class="drawer__link drawer__link--active" aria-current="page">Home</a></li>
+          <li><a href="sobre.html" class="drawer__link">Sobre</a></li>
+          <li><a href="produtos.html" class="drawer__link">Produtos</a></li>
+          <li><a href="precos.html" class="drawer__link">Preços</a></li>
+          <li><a href="contato.html" class="drawer__link">Contato</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--accent drawer__cta">Solicitar proposta</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <p class="tag">Soluções corporativas</p>
+          <h1 class="hero__title" id="hero-title">Ambientes de trabalho que elevam a performance da sua empresa</h1>
+          <p class="hero__subtitle" id="hero-subtitle">
+            Do planejamento à instalação, equipamos escritórios de todos os portes com móveis ergonômicos, duráveis e entregues no prazo.
+          </p>
+          <a href="produtos.html" class="btn btn--accent" id="hero-cta-button">Ver produtos</a>
+        </div>
+
+        <!-- Painel de orçamento rápido -->
+        <form class="quick" action="contato.html" method="get">
+          <h2 class="quick__title">Monte seu orçamento</h2>
+
+          <label class="quick__field">
+            <span class="quick__label">Tipo de ambiente</span>
+            <select name="ambiente">
+              <option>Escritório administrativo</option>
+              <option>Sala de reunião</option>
+              <option>Recepção</option>
+              <option>Coworking</option>
+            </select>
+          </label>
+
+          <label class="quick__field">
+            <span class="quick__label">Número de postos</span>
+            <select name="postos">
+              <option>1 a 5</option>
+              <option>6 a 20</option>
+              <option>21 a 50</option>
+              <option>Mais de 50</option>
+            </select>
+          </label>
+
+          <label class="quick__field">
+            <span class="quick__label">Prazo desejado</span>
+            <select name="prazo">
+              <option>Urgente (até 15 dias)</option>
+              <option>Até 30 dias</option>
+              <option>Sem pressa</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn--primary quick__submit">Solicitar proposta</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ========== NÚMEROS ========== -->
+    <section class="metrics" aria-label="Nossos números">
+      <div class="container">
+        <ul class="metrics__list">
+          <li class="metrics__item">
+            <strong class="metrics__number">+10</strong>
+            <span class="metrics__label">anos de experiência</span>
+          </li>
+          <li class="metrics__item">
+            <strong class="metrics__number">+2.000</strong>
+            <span class="metrics__label">empresas atendidas</span>
+          </li>
+          <li class="metrics__item">
+            <strong class="metrics__number">+500</strong>
+            <span class="metrics__label">escritórios entregues</span>
+          </li>
+          <li class="metrics__item">
+            <strong class="metrics__number">98%</strong>
+            <span class="metrics__label">de clientes satisfeitos</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CATEGORIAS ========== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="tag tag--dark">Linhas de produtos</p>
+          <h2 class="section__title">Tudo para equipar seu escritório</h2>
+        </header>
+
+        <div class="tiles">
+          <a href="produtos.html" class="tile">
+            <span class="tile__icon" aria-hidden="true">01</span>
+            <h3 class="tile__title">Cadeiras ergonômicas</h3>
+            <p class="tile__text">Conforto e saúde postural para longas jornadas.</p>
+            <span class="tile__more">Ver linha</span>
+          </a>
+          <a href="produtos.html" class="tile">
+            <span class="tile__icon" aria-hidden="true">02</span>
+            <h3 class="tile__title">Mesas e estações</h3>
+            <p class="tile__text">Individuais, compartilhadas e modulares.</p>
+            <span class="tile__more">Ver linha</span>
+          </a>
+          <a href="produtos.html" class="tile">
+            <span class="tile__icon" aria-hidden="true">03</span>
+            <h3 class="tile__title">Armários e arquivos</h3>
+            <p class="tile__text">Organização e segurança para documentos.</p>
+            <span class="tile__more">Ver linha</span>
+          </a>
+          <a href="produtos.html" class="tile">
+            <span class="tile__icon" aria-hidden="true">04</span>
+            <h3 class="tile__title">Recepção e espera</h3>
+            <p class="tile__text">Sofás, balcões e poltronas que valorizam sua marca.</p>
+            <span class="tile__more">Ver linha</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section class="section section--tint">
+      <div class="container split">
+
+        <div class="split__text">
+          <p class="tag tag--dark">Por que nos escolher</p>
+          <h2 class="section__title">Parceria do projeto ao pós-venda</h2>
+          <p class="split__lead">
+            Atendemos empresas que precisam de agilidade, padronização e segurança na compra de mobiliário corporativo.
+          </p>
+        </div>
+
+        <ul class="checklist">
+          <li class="checklist__item">
+            <strong>Projeto de layout sob medida</strong>
+            <span>Planejamos o espaço para otimizar o uso de cada metro quadrado.</span>
+          </li>
+          <li class="checklist__item">
+            <strong>Entrega e montagem inclusas</strong>
+            <span>Equipe própria e treinada, sem interromper sua operação.</span>
+          </li>
+          <li class="checklist__item">
+            <strong>Garantia estendida</strong>
+            <span>Produtos com certificação e suporte técnico depois da venda.</span>
+          </li>
+          <li class="checklist__item">
+            <strong>Condições para empresas</strong>
+            <span>Faturamento com CNPJ e propostas para grandes volumes.</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ========== PROCESSO ========== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="tag tag--dark">Como funciona</p>
+          <h2 class="section__title">Um processo simples e transparente</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__step">
+            <span class="timeline__dot">1</span>
+            <h3 class="timeline__title">Briefing</h3>
+            <p class="timeline__text">Entendemos sua equipe, espaço e orçamento.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__dot">2</span>
+            <h3 class="timeline__title">Proposta</h3>
+            <p class="timeline__text">Layout e lista de peças com valores claros.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__dot">3</span>
+            <h3 class="timeline__title">Produção e entrega</h3>
+            <p class="timeline__text">Acompanhamento até a chegada ao seu endereço.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__dot">4</span>
+            <h3 class="timeline__title">Instalação</h3>
+            <p class="timeline__text">Montagem completa e ambiente pronto para uso.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Pronto para renovar o seu escritório?</h2>
+          <p class="cta-band__text">Fale com um consultor e receba uma proposta personalizada.</p>
+        </div>
+        <a href="contato.html" class="btn btn--accent">Falar com consultor</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__col footer__col--wide">
+        <h2 class="footer__name" id="company-name">Minha Empresa Ltda.</h2>
+        <p class="footer__text">Soluções completas em mobiliário corporativo para empresas de todos os portes.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Endereço</h3>
+        <address class="footer__text" id="footer-address">
+          Rua Exemplo, 123 - Centro<br>
+          Cidade - UF, 00000-000
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">E-mail</h3>
+        <a href="mailto:contato@exemplo.com.br" class="footer__link" id="footer-email">contato@exemplo.com.br</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Navegação</h3>
+        <ul class="footer__nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="precos.html">Preços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bar">
+      <p class="container">&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    WhatsApp
+  </a>
+
+</body>
+</html>
