@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Móveis para escritório com design limpo e atemporal: mesas, cadeiras, armários e peças de recepção.">
+  <title>Home | Móveis para Escritório</title>
+
+  <!-- Ordem de importação obrigatória -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="wrap site-header__row">
+
+      <a href="index.html" class="wordmark" id="logo">Minha Marca</a>
+
+      <!-- Menu mobile inline (checkbox hack, sem JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-check" aria-label="Abrir menu">
+      <label for="nav-toggle" class="nav-btn" aria-hidden="true"><span></span><span></span></label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link nav__link--active" aria-current="page">Home</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+          <li><a href="precos.html" class="nav__link">Preços</a></li>
+          <li><a href="contato.html" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">Mobiliário para escritório</p>
+        <h1 class="hero__title" id="hero-title">Menos ruído. Mais espaço para trabalhar.</h1>
+        <p class="hero__subtitle" id="hero-subtitle">
+          Móveis de linhas simples, materiais duráveis e acabamento cuidadoso, para escritórios que valorizam foco e clareza.
+        </p>
+        <div class="hero__actions">
+          <a href="produtos.html" class="btn" id="hero-cta-button">Ver produtos</a>
+          <a href="sobre.html" class="link-btn">Conhecer a loja</a>
+        </div>
+      </div>
+
+      <!-- Espaço reservado para imagem principal -->
+      <div class="wrap">
+        <div class="hero__image" role="img" aria-label="Imagem ilustrativa de um escritório"></div>
+      </div>
+    </section>
+
+    <!-- ========== PRINCÍPIOS ========== -->
+    <section class="space">
+      <div class="wrap">
+        <ul class="principles">
+          <li class="principles__item">
+            <span class="principles__number">01</span>
+            <h2 class="principles__title">Design essencial</h2>
+            <p class="principles__text">Formas simples que atravessam o tempo e se adaptam a qualquer ambiente.</p>
+          </li>
+          <li class="principles__item">
+            <span class="principles__number">02</span>
+            <h2 class="principles__title">Feito para durar</h2>
+            <p class="principles__text">Materiais selecionados, estrutura reforçada e garantia estendida.</p>
+          </li>
+          <li class="principles__item">
+            <span class="principles__number">03</span>
+            <h2 class="principles__title">Do projeto à montagem</h2>
+            <p class="principles__text">Planejamos, entregamos e instalamos. Você só precisa chegar e trabalhar.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== COLEÇÕES ========== -->
+    <section class="space space--soft">
+      <div class="wrap">
+
+        <div class="head">
+          <h2 class="head__title">Coleções</h2>
+          <a href="produtos.html" class="link-btn">Ver todas</a>
+        </div>
+
+        <div class="gallery">
+          <a href="produtos.html" class="gallery__item">
+            <div class="gallery__image" role="img" aria-label="Imagem ilustrativa de cadeiras"></div>
+            <span class="gallery__name">Cadeiras</span>
+            <span class="gallery__note">Ergonomia e conforto</span>
+          </a>
+          <a href="produtos.html" class="gallery__item">
+            <div class="gallery__image" role="img" aria-label="Imagem ilustrativa de mesas"></div>
+            <span class="gallery__name">Mesas</span>
+            <span class="gallery__note">Estações e reuniões</span>
+          </a>
+          <a href="produtos.html" class="gallery__item">
+            <div class="gallery__image" role="img" aria-label="Imagem ilustrativa de armários"></div>
+            <span class="gallery__name">Armários</span>
+            <span class="gallery__note">Organização e arquivo</span>
+          </a>
+          <a href="produtos.html" class="gallery__item">
+            <div class="gallery__image" role="img" aria-label="Imagem ilustrativa de recepção"></div>
+            <span class="gallery__name">Recepção</span>
+            <span class="gallery__note">Sofás e balcões</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== DECLARAÇÃO ========== -->
+    <section class="space">
+      <div class="wrap">
+        <p class="statement">
+          Um bom escritório não chama atenção para si. Ele deixa a atenção livre para o que importa.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PROCESSO ========== -->
+    <section class="space space--line">
+      <div class="wrap process">
+        <h2 class="head__title">Como trabalhamos</h2>
+
+        <ol class="process__list">
+          <li class="process__item">
+            <span class="process__number">1</span>
+            <div>
+              <h3 class="process__title">Conversa</h3>
+              <p class="process__text">Entendemos seu espaço, sua equipe e seu orçamento.</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <span class="process__number">2</span>
+            <div>
+              <h3 class="process__title">Proposta</h3>
+              <p class="process__text">Layout e lista de peças, com valores claros.</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <span class="process__number">3</span>
+            <div>
+              <h3 class="process__title">Entrega e montagem</h3>
+              <p class="process__text">Equipe própria instala tudo e deixa o ambiente pronto.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="closing">
+      <div class="wrap">
+        <h2 class="closing__title">Vamos conversar sobre o seu escritório?</h2>
+        <a href="contato.html" class="btn">Pedir orçamento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <h2 class="site-footer__name" id="company-name">Minha Empresa Ltda.</h2>
+
+      <div class="site-footer__grid">
+        <div>
+          <h3 class="site-footer__heading">Endereço</h3>
+          <address class="site-footer__text" id="footer-address">
+            Rua Exemplo, 123 - Centro<br>
+            Cidade - UF, 00000-000
+          </address>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">E-mail</h3>
+          <a href="mailto:contato@exemplo.com.br" class="site-footer__link" id="footer-email">contato@exemplo.com.br</a>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">Navegação</h3>
+          <ul class="site-footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="site-footer__copy">&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLUTUANTE ========== -->
+  <a href="https://wa.me/5500000000000" class="whatsapp" id="whatsapp-contact"
+     target="_blank" rel="noopener noreferrer" aria-label="Atendimento via WhatsApp">
+    <span class="whatsapp__dot" aria-hidden="true"></span>WhatsApp
+  </a>
+
+</body>
+</html>

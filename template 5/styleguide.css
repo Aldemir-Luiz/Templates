@@ -1,0 +1,53 @@
+/* =========================================================
+   styleguide.css
+   Design tokens da marca (tema minimalista).
+   A engine multi-tenant sobrescreve estas variáveis por cliente.
+   Único arquivo com cores literais.
+   ========================================================= */
+
+:root {
+  /* ---- Cores de marca (alvo principal da engine) ---- */
+  --primary-color: #141414;      /* tinta: botões, títulos e detalhes fortes */
+  --secondary-color: #8c8478;    /* cinza quente: acentos discretos */
+  --bg-color: #fafaf8;           /* fundo principal */
+  --text-color: #1c1c1b;         /* texto principal */
+
+  /* ---- Cores de apoio ---- */
+  --surface-color: #f0efeb;      /* blocos e imagens reservadas */
+  --border-color: #dcdad4;       /* linhas finas */
+  --text-muted-color: #77746d;
+  --text-on-primary: #fafaf8;    /* texto sobre fundos de marca */
+  --whatsapp-color: #2fb36a;
+
+  /* ---- Tipografia ---- */
+  --font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
+  --font-weight-light: 300;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-lg: 1.125rem;
+  --font-size-h1: clamp(2.5rem, 8vw, 5.5rem);
+  --font-size-h2: clamp(1.75rem, 4vw, 2.75rem);
+  --font-size-h3: 1.125rem;
+  --letter-wide: 0.12em;
+
+  /* ---- Espaçamentos ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 7rem;
+
+  /* ---- Layout ---- */
+  --container-width: 1240px;
+  --header-height: 64px;
+  --line: 1px solid var(--border-color);
+  --transition: 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-height: 80px;
+    --space-2xl: 10rem;
+  }
+}
