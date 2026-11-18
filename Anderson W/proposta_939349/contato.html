@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contato e Orçamentos | Milacan</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo">
+        <div class="wrap">
+            <span>Atendimento em Recife e Região · Segunda a Sábado</span>
+            <span>(81) 99625-9540 · milacan100@hotmail.com</span>
+        </div>
+    </div>
+
+    <header class="hd">
+        <div class="wrap hd-in">
+            <a class="logo" href="index.html" id="logo"><svg class="logo-svg" viewBox="0 0 250 84" role="img" aria-label="Milacan"><text x="6" y="54" font-family="'Playfair Display',Georgia,serif" font-style="italic" font-size="56" font-weight="500" fill="#E10E0E" letter-spacing="-2">Milacan</text><polygon points="16,64 246,64 238,76 8,76" fill="#E10E0E"/><polygon points="2,64 10,64 2,76 -6,76" fill="#E10E0E"/></svg></a>
+            <nav class="nav-menu"><a href="index.html" class="">Início</a><a href="catalogo.html" class="">Catálogo</a><a href="sobre.html" class="">Sobre</a><a href="contato.html" class="ativo">Contato</a></nav>
+            <button class="qbtn" data-open>Cotação <b id="qcount">0</b></button>
+        </div>
+    </header>
+
+    <main>
+        
+    <section class="sec">
+        <div class="wrap">
+            <div class="sec-h">
+                <span class="tag">Atendimento</span>
+                <h2>Fale com nossa equipe</h2>
+                <p>Visite nosso showroom ou entre em contato diretamente pelo WhatsApp.</p>
+            </div>
+
+            <div class="cont-grid">
+
+                <div style="background:var(--surf);padding:36px;border:1px solid var(--line);border-radius:var(--r);">
+                    <h3 style="margin-bottom:16px;">Atendimento Comercial Direto</h3>
+
+                    <p style="color:var(--mut);margin-bottom:20px;">
+                        Nossa equipe está pronta para ajudar no dimensionamento técnico do seu projeto e envio de orçamentos rápidos.
+                    </p>
+
+                    <a href="https://wa.me/5581996259540" class="btn btn-p" target="_blank" style="width:100%;">
+                        Abrir Atendimento no WhatsApp
+                    </a>
+                </div>
+
+                <div style="background:var(--dark);color:#fff;padding:36px;border-radius:var(--r);display:flex;flex-direction:column;gap:16px;">
+
+                    <div>
+                        <strong style="color:var(--acc);display:block;margin-bottom:40px;font-size:0.8rem;text-transform:uppercase;">Showroom e Loja Física</strong>
+                        <p>R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+                    </div>
+
+                    <div>
+                        <strong style="color:var(--acc);display:block;font-size:0.8rem;text-transform:uppercase;">Telefones</strong>
+                        <p>(81) 99625-9540 / (81) 99793-5116</p>
+                    </div>
+
+                    <div>
+                        <strong style="color:var(--acc);display:block;font-size:0.8rem;text-transform:uppercase;">E-mail</strong>
+                        <p>milacan100@hotmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer class="ft">
+        <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+            <div>
+                <h4 id="company-name" style="font-family:var(--fd);margin-bottom:6px;">Milacan Móveis para Escritório</h4>
+                <p style="font-size:0.85rem;opacity:0.8;" id="footer-address">R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+            </div>
+            <div style="font-size:0.85rem;opacity:0.8;text-align:right;">
+                <p>© 2026 Milacan Móveis para Escritório · CNPJ: 04.260.294/0002-22</p>
+                <p><a href="mailto:milacan100@hotmail.com" id="footer-email" style="text-decoration:underline;">milacan100@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <aside class="drawer" id="drawer">
+        <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <h3>Sua Lista de Cotação</h3>
+            <button data-close style="background:none;border:0;font-size:1.3rem;cursor:pointer;">✕</button>
+        </header>
+        <div id="qlist" style="flex:1;overflow:auto;display:flex;flex-direction:column;gap:10px;"></div>
+        <button class="btn btn-p" data-send style="width:100%;margin-top:16px;">Enviar Cotação pelo WhatsApp</button>
+    </aside>
+
+    <a class="wa" href="https://wa.me/5581996259540" target="_blank" id="whatsapp-contact">WhatsApp</a>
+    <script src="app.js"></script>
+</body>
+</html>

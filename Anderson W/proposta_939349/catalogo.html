@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Catálogo de Produtos | Milacan</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo">
+        <div class="wrap">
+            <span>Atendimento em Recife e Região · Segunda a Sábado</span>
+            <span>(81) 99625-9540 · milacan100@hotmail.com</span>
+        </div>
+    </div>
+
+    <header class="hd">
+        <div class="wrap hd-in">
+            <a class="logo" href="index.html" id="logo"><svg class="logo-svg" viewBox="0 0 250 84" role="img" aria-label="Milacan"><text x="6" y="54" font-family="'Playfair Display',Georgia,serif" font-style="italic" font-size="56" font-weight="500" fill="#E10E0E" letter-spacing="-2">Milacan</text><polygon points="16,64 246,64 238,76 8,76" fill="#E10E0E"/><polygon points="2,64 10,64 2,76 -6,76" fill="#E10E0E"/></svg></a>
+            <nav class="nav-menu"><a href="index.html" class="">Início</a><a href="catalogo.html" class="ativo">Catálogo</a><a href="sobre.html" class="">Sobre</a><a href="contato.html" class="">Contato</a></nav>
+            <button class="qbtn" data-open>Cotação <b id="qcount">0</b></button>
+        </div>
+    </header>
+
+    <main>
+        
+    <section class="sec">
+        <div class="wrap">
+            <div class="sec-h">
+                <span class="tag">Portfólio</span>
+                <h2>Catálogo de Produtos</h2>
+                <p>Navegue pelas categorias ou utilize a busca para montar sua lista de cotação.</p>
+            </div>
+
+            <input type="search" id="catalog-search" class="search"
+                placeholder="Pesquisar cadeira, mesa, armário..."
+                aria-label="Pesquisar produtos">
+
+            <div class="chips"><button class="chip ativo" data-filter="todos">Todos</button><button class="chip" data-filter="cadeiras">Cadeiras</button><button class="chip" data-filter="mesas">Mesas</button><button class="chip" data-filter="armarios">Armários</button><button class="chip" data-filter="gaveteiros">Gaveteiros</button><button class="chip" data-filter="plataformas">Plataformas</button><button class="chip" data-filter="aco">Móveis em aço</button><button class="chip" data-filter="acessorios">Acessórios</button></div>
+
+            <div class="linha" id="catalog-grid">
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Linha Cavaletti</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cavaletti Flip Light Cinza</h3>
+                <p id="product-description">Giratória com encosto em tela e braços reguláveis.</p>
+                <button class="add" data-add="Cavaletti Flip Light Cinza" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Linha Cavaletti</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cavaletti Flip Light Preta</h3>
+                <p id="product-description">Versão preta da Flip Light, para uso diário prolongado.</p>
+                <button class="add" data-add="Cavaletti Flip Light Preta" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Operacional</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Sob consulta</span>
+                </div>
+                <h3 id="product-title">Cadeira Atlanta</h3>
+                <p id="product-description">Encosto em tela com apoio de cabeça e ajuste de altura.</p>
+                <button class="add" data-add="Cadeira Atlanta" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Diretor</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cadeira Florença baixa</h3>
+                <p id="product-description">Revestimento acolchoado, base cromada e rodízios.</p>
+                <button class="add" data-add="Cadeira Florença baixa" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Presidente</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cadeira Florença alta</h3>
+                <p id="product-description">Espaldar alto com braços cromados e design executivo.</p>
+                <button class="add" data-add="Cadeira Florença alta" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="mesas">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h48v6H8zM14 30v22M50 30v22"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Reunião</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Mesa de reunião redonda</h3>
+                <p id="product-description">Tampo redondo com base central para salas de reunião.</p>
+                <button class="add" data-add="Mesa de reunião redonda" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="mesas">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h48v6H8zM14 30v22M50 30v22"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Estações</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Mesa em L</h3>
+                <p id="product-description">Pés em painel, ótima para aproveitar o canto da sala.</p>
+                <button class="add" data-add="Mesa em L" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="mesas">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h48v6H8zM14 30v22M50 30v22"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Reunião</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Sob consulta</span>
+                </div>
+                <h3 id="product-title">Mesa redonda tampo amadeirado</h3>
+                <p id="product-description">Acabamento em madeira com base em preto.</p>
+                <button class="add" data-add="Mesa redonda tampo amadeirado" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="mesas">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h48v6H8zM14 30v22M50 30v22"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Gerência</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Mesa com gaveteiro</h3>
+                <p id="product-description">Mesa com módulo de gavetas integrado.</p>
+                <button class="add" data-add="Mesa com gaveteiro" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="mesas">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24h48v6H8zM14 30v22M50 30v22"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Estações</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Mesa reta pé metálico</h3>
+                <p id="product-description">Tampo amadeirado sobre estrutura metálica.</p>
+                <button class="add" data-add="Mesa reta pé metálico" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="armarios">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10h32v46H16zM32 10v46M27 30v4M37 30v4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Armazenagem</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Armário alto com portas</h3>
+                <p id="product-description">Prateleiras internas e fechadura.</p>
+                <button class="add" data-add="Armário alto com portas" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="armarios">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10h32v46H16zM32 10v46M27 30v4M37 30v4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Armazenagem</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Armário baixo credenza</h3>
+                <p id="product-description">Apoio lateral com tampo útil.</p>
+                <button class="add" data-add="Armário baixo credenza" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="gaveteiros">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 14h28v40H18zM18 28h28M18 41h28M30 21h4M30 34h4M30 47h4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Armazenagem</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Gaveteiro volante</h3>
+                <p id="product-description">Gavetas com chave e rodízios.</p>
+                <button class="add" data-add="Gaveteiro volante" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="plataformas">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26h52v5H6zM12 31v20M52 31v20M32 31v20"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Estações</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Sob consulta</span>
+                </div>
+                <h3 id="product-title">Plataforma de trabalho</h3>
+                <p id="product-description">Bancadas compartilhadas para equipes.</p>
+                <button class="add" data-add="Plataforma de trabalho" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="aco">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h32v48H16zM16 22h32M16 36h32M26 15h12M26 29h12M26 43h12"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Aço</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Arquivo de aço</h3>
+                <p id="product-description">Estrutura metálica reforçada para documentos.</p>
+                <button class="add" data-add="Arquivo de aço" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="acessorios">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 44h40M20 44V30h24v14M28 30V18h8v12"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Acessórios</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Suporte e acessórios</h3>
+                <p id="product-description">Itens de apoio ergonômico para estação de trabalho.</p>
+                <button class="add" data-add="Suporte e acessórios" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer class="ft">
+        <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+            <div>
+                <h4 id="company-name" style="font-family:var(--fd);margin-bottom:6px;">Milacan Móveis para Escritório</h4>
+                <p style="font-size:0.85rem;opacity:0.8;" id="footer-address">R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+            </div>
+            <div style="font-size:0.85rem;opacity:0.8;text-align:right;">
+                <p>© 2026 Milacan Móveis para Escritório · CNPJ: 04.260.294/0002-22</p>
+                <p><a href="mailto:milacan100@hotmail.com" id="footer-email" style="text-decoration:underline;">milacan100@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <aside class="drawer" id="drawer">
+        <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <h3>Sua Lista de Cotação</h3>
+            <button data-close style="background:none;border:0;font-size:1.3rem;cursor:pointer;">✕</button>
+        </header>
+        <div id="qlist" style="flex:1;overflow:auto;display:flex;flex-direction:column;gap:10px;"></div>
+        <button class="btn btn-p" data-send style="width:100%;margin-top:16px;">Enviar Cotação pelo WhatsApp</button>
+    </aside>
+
+    <a class="wa" href="https://wa.me/5581996259540" target="_blank" id="whatsapp-contact">WhatsApp</a>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{max-width:100%;display:block}

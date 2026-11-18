@@ -1,0 +1,1 @@
+Substitua os arquivos SVG desta pasta por fotografias reais, mantendo os nomes ou atualize os caminhos no HTML. Os SVGs são placeholders de demonstração.

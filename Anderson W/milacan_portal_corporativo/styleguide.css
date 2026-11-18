@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #007A3D;        /* Verde Institucional Milacan */
+    --primary-dark: #00582B;         /* Verde Escuro Hover */
+    --primary-light: #E6F4EC;        /* Verde Suave para Badges */
+    --secondary-color: #1F2421;      /* Grafite Corporativo */
+    --bg-color: #F6F8F7;             /* Fundo Neutro Limpo */
+    --surface-color: #FFFFFF;        /* Superfície Cards */
+    --surface-border: #DCE3DF;       /* Bordas Sutis */
+    --text-color: #1A1D1B;           /* Texto Principal */
+    --text-muted: #5A635E;           /* Texto Secundário */
+    --accent-gold: #D99B26;          /* Detalhe Premium */
+    --font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+    --border-radius: 8px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --transition: all 0.25s ease;
+}

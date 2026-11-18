@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Milacan | Móveis para Escritório</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo">
+        <div class="wrap">
+            <span>Atendimento em Recife e Região · Segunda a Sábado</span>
+            <span>(81) 99625-9540 · milacan100@hotmail.com</span>
+        </div>
+    </div>
+
+    <header class="hd">
+        <div class="wrap hd-in">
+            <a class="logo" href="index.html" id="logo"><svg class="logo-svg" viewBox="0 0 250 84" role="img" aria-label="Milacan"><text x="6" y="54" font-family="'Playfair Display',Georgia,serif" font-style="italic" font-size="56" font-weight="500" fill="#E10E0E" letter-spacing="-2">Milacan</text><polygon points="16,64 246,64 238,76 8,76" fill="#E10E0E"/><polygon points="2,64 10,64 2,76 -6,76" fill="#E10E0E"/></svg></a>
+            <nav class="nav-menu"><a href="index.html" class="ativo">Início</a><a href="catalogo.html" class="">Catálogo</a><a href="sobre.html" class="">Sobre</a><a href="contato.html" class="">Contato</a></nav>
+            <button class="qbtn" data-open>Cotação <b id="qcount">0</b></button>
+        </div>
+    </header>
+
+    <main>
+        
+    <section class="hero">
+        <div class="wrap">
+            <h1 id="hero-title">Um escritório que <em>funciona</em> começa no planejamento.</h1>
+            <p id="hero-subtitle">Ajudamos a escolher cadeiras, estações e armazenagem de acordo com o seu espaço, a sua equipe e o seu orçamento.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                <a class="btn btn-p" href="catalogo.html" id="hero-cta-button">Solicitar uma proposta</a>
+                <a class="btn btn-o" href="contato.html">Falar com consultor</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pil">
+        <div class="wrap"><div><h3>Entrega acompanhada</h3><p>Cronograma alinhado do pedido à montagem.</p></div><div><h3>Consultoria personalizada</h3><p>Orientação para cada tipo de ambiente.</p></div><div><h3>Portfólio selecionado</h3><p>Produtos escolhidos por durabilidade e conforto.</p></div></div>
+    </section>
+
+    <section class="sec">
+        <div class="wrap">
+            <div class="sec-h">
+                <span class="tag">Destaques</span>
+                <h2>Soluções mais procuradas</h2>
+                <p>Mobiliário corporativo ergonômico com garantia e entrega planejada.</p>
+            </div>
+
+            <div class="linha">
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Linha Cavaletti</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cavaletti Flip Light Cinza</h3>
+                <p id="product-description">Giratória com encosto em tela e braços reguláveis.</p>
+                <button class="add" data-add="Cavaletti Flip Light Cinza" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Linha Cavaletti</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cavaletti Flip Light Preta</h3>
+                <p id="product-description">Versão preta da Flip Light, para uso diário prolongado.</p>
+                <button class="add" data-add="Cavaletti Flip Light Preta" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Operacional</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Sob consulta</span>
+                </div>
+                <h3 id="product-title">Cadeira Atlanta</h3>
+                <p id="product-description">Encosto em tela com apoio de cabeça e ajuste de altura.</p>
+                <button class="add" data-add="Cadeira Atlanta" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        
+        <article class="card" data-cat="cadeiras">
+            <div class="card-m" id="product-image"><svg class="glifo" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 14h20l-2 20H24zM20 34h24v6H20zM32 40v10M20 54l12-4 12 4"/></svg></div>
+            <div class="card-b">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="tag">Diretor</span>
+                    <span style="font-size:0.7rem;font-weight:700;color:var(--mut);background:var(--line);padding:2px 8px;border-radius:99px;" id="stock-quantity">Em estoque</span>
+                </div>
+                <h3 id="product-title">Cadeira Florença baixa</h3>
+                <p id="product-description">Revestimento acolchoado, base cromada e rodízios.</p>
+                <button class="add" data-add="Cadeira Florença baixa" id="buy-button">Adicionar à cotação</button>
+            </div>
+        </article>
+        </div>
+
+            <div style="margin-top:40px;text-align:center;">
+                <a href="catalogo.html" class="btn btn-p">Ver catálogo completo (16 itens)</a>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer class="ft">
+        <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+            <div>
+                <h4 id="company-name" style="font-family:var(--fd);margin-bottom:6px;">Milacan Móveis para Escritório</h4>
+                <p style="font-size:0.85rem;opacity:0.8;" id="footer-address">R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+            </div>
+            <div style="font-size:0.85rem;opacity:0.8;text-align:right;">
+                <p>© 2026 Milacan Móveis para Escritório · CNPJ: 04.260.294/0002-22</p>
+                <p><a href="mailto:milacan100@hotmail.com" id="footer-email" style="text-decoration:underline;">milacan100@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <aside class="drawer" id="drawer">
+        <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <h3>Sua Lista de Cotação</h3>
+            <button data-close style="background:none;border:0;font-size:1.3rem;cursor:pointer;">✕</button>
+        </header>
+        <div id="qlist" style="flex:1;overflow:auto;display:flex;flex-direction:column;gap:10px;"></div>
+        <button class="btn btn-p" data-send style="width:100%;margin-top:16px;">Enviar Cotação pelo WhatsApp</button>
+    </aside>
+
+    <a class="wa" href="https://wa.me/5581996259540" target="_blank" id="whatsapp-contact">WhatsApp</a>
+    <script src="app.js"></script>
+</body>
+</html>
