@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato & Orçamentos | Milacan Móveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span>📍 R. da Conceição, 100 - Boa Vista, Recife - PE | CNPJ: 04.260.294/0002-22</span>
+            <div class="top-bar-links">
+                <span>📞 (81) 99625-9540 / (81) 99793-5116</span>
+                <span>✉️ milacan100@hotmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" id="logo" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">
+                    MILA<span>CAN</span>
+                    <span class="logo-sub">Móveis para Escritório</span>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html" class="">Página Inicial</a>
+                <a href="catalogo.html" class="">Catálogo Completo</a>
+                <a href="sobre.html" class="">Sobre Nós</a>
+                <a href="contato.html" class="active">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="quote-btn" onclick="toggleDrawer()">
+                    Lista de Cotação <span class="quote-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside id="quote-drawer" class="quote-drawer">
+        <div class="drawer-header">
+            <h3>Lista de Cotação B2B</h3>
+            <button class="close-drawer" onclick="toggleDrawer(false)">✕</button>
+        </div>
+        <div id="drawer-items" class="drawer-items"></div>
+        <div style="padding-top: 16px; border-top: 1px solid var(--surface-border);">
+            <button class="btn-primary" style="width: 100%;" onclick="sendQuoteWhatsApp()">Enviar Cotação no WhatsApp</button>
+        </div>
+    </aside>
+
+
+    <main class="section container">
+        <div class="section-header">
+            <span class="badge-pill">Fale Conosco</span>
+            <h1>Solicite seu Orçamento Corporativo</h1>
+            <p>Entre em contato com nossa equipe comercial em Recife ou visite nosso showroom na Boa Vista.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div>
+                <div class="contact-card">
+                    <strong>Endereço da Loja / Showroom</strong>
+                    <span>R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</span>
+                </div>
+                <div class="contact-card">
+                    <strong>Telefones & WhatsApp Comercial</strong>
+                    <span id="contact-phone">(81) 99625-9540 / (81) 99793-5116</span>
+                </div>
+                <div class="contact-card">
+                    <strong>E-mail Institucional</strong>
+                    <span>milacan100@hotmail.com</span>
+                </div>
+                <div class="contact-card">
+                    <strong>CNPJ</strong>
+                    <span>04.260.294/0002-22</span>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo ou Empresa</label>
+                        <input type="text" id="name" required placeholder="Ex: João Silva / Empresa Ltda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail para Retorno</label>
+                        <input type="email" id="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Descrição dos Móveis / Projeto</label>
+                        <textarea id="message" rows="5" required placeholder="Informe os modelos desejados (cadeiras, mesas Yaris/Start, armários, arquivos em aço) e quantidades..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Enviar Solicitação via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 id="company-name">MILACAN MÓVEIS PARA ESCRITÓRIO</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;">Soluções completas em mobiliário corporativo, ergonomia e armazenagem em aço em Pernambuco.</p>
+                <p style="font-size: 0.85rem; color: #94A3B8;">CNPJ: 04.260.294/0002-22</p>
+            </div>
+            <div>
+                <h4>Linhas de Produtos</h4>
+                <div class="footer-links">
+                    <a href="catalogo.html">Cadeiras Ergonômicas Cavaletti</a>
+                    <a href="catalogo.html">Mesas & Estações Linha Yaris</a>
+                    <a href="catalogo.html">Mobiliário Corporativo Linha Start</a>
+                    <a href="catalogo.html">Arquivos, Estantes e Roupeiros em Aço</a>
+                </div>
+            </div>
+            <div>
+                <h4>Loja Física & Atendimento</h4>
+                <p id="footer-address" style="font-size: 0.9rem; margin-bottom: 8px;">R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+                <p id="footer-email" style="font-size: 0.9rem; margin-bottom: 8px;">milacan100@hotmail.com</p>
+                <p style="font-size: 0.9rem;">(81) 99625-9540 | (81) 99793-5116</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">© 2026 Milacan Móveis para Escritório. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5581996259540" id="whatsapp-contact" class="whatsapp-float" target="_blank">WhatsApp Comercial</a>
+    <script src="app.js"></script>
+
+</body>
+</html>

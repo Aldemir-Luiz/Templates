@@ -1,0 +1,21 @@
+/* styleguide.css */
+:root {
+    --primary-color: #0284C7;
+    --primary-tint: rgba(2, 132, 199, 0.06);
+    --primary-shadow: rgba(2, 132, 199, 0.22);
+    --secondary-color: #0F172A;
+    --secondary-tint: rgba(15, 23, 42, 0.03);
+    --bg-color: #F8FAFC;
+    --surface-color: #FFFFFF;
+    --surface-alt: #F1F5F9;
+    --surface-border: #E2E8F0;
+    --text-color: #1E293B;
+    --text-muted: #64748B;
+    --text-on-primary: #FFFFFF;
+    --text-on-dark: #94A3B8;
+    --whatsapp-color: #25D366;
+    --whatsapp-shadow: rgba(37, 211, 102, 0.3);
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --border-radius: 8px;
+    --transition: all 0.25s ease;
+}
