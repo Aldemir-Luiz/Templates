@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milacan | Móveis para Escritório em Recife - PE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span>📍 R. da Conceição, 100 - Boa Vista, Recife - PE | CNPJ: 04.260.294/0002-22</span>
+            <div class="top-bar-links">
+                <span>📞 (81) 99625-9540 / (81) 99793-5116</span>
+                <span>✉️ milacan100@hotmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" id="logo" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">
+                    MILA<span>CAN</span>
+                    <span class="logo-sub">Móveis para Escritório</span>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html" class="active">Página Inicial</a>
+                <a href="catalogo.html" class="">Catálogo Completo</a>
+                <a href="sobre.html" class="">Sobre Nós</a>
+                <a href="contato.html" class="">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="quote-btn" onclick="toggleDrawer()">
+                    Lista de Cotação <span class="quote-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside id="quote-drawer" class="quote-drawer">
+        <div class="drawer-header">
+            <h3>Lista de Cotação B2B</h3>
+            <button class="close-drawer" onclick="toggleDrawer(false)">✕</button>
+        </div>
+        <div id="drawer-items" class="drawer-items"></div>
+        <div style="padding-top: 16px; border-top: 1px solid var(--surface-border);">
+            <button class="btn-primary" style="width: 100%;" onclick="sendQuoteWhatsApp()">Enviar Cotação no WhatsApp</button>
+        </div>
+    </aside>
+
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <span class="badge-pill">Mobiliário Corporativo em Pernambuco</span>
+                    <h1 id="hero-title">Soluções Completas em <span>Móveis para Escritório</span></h1>
+                    <p id="hero-subtitle">Cadeiras ergonômicas Cavaletti, estações de trabalho Yaris e Start, mesas de reunião e móveis em aço com compromisso na entrega e qualidade garantida.</p>
+                    <div class="hero-cta-group">
+                        <a href="catalogo.html" id="hero-cta-button" class="btn-primary">Explorar Catálogo</a>
+                        <a href="sobre.html" class="btn-outline">Conheça a Milacan</a>
+                    </div>
+                    <div class="trust-strip">
+                        <div class="trust-item">
+                            <strong>Linha Cavaletti</strong>
+                            <span>Ergonomia certificada</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>Yaris & Start</strong>
+                            <span>Estações modulares</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>Recife & Região</strong>
+                            <span>Entrega ágil e montagem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=85" alt="Showroom Corporativo Milacan">
+                    <div class="hero-floating-box">
+                        <strong>Atendimento Corporativo & B2B</strong>
+                        <p>Orçamentos personalizados para empresas, escritórios, clínicas e licitações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-header">
+                <h2>Por que escolher a Milacan?</h2>
+                <p>Tradição no comércio de móveis corporativos no Recife, unindo durabilidade, ergonomia e atendimento consultivo.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">🚚</div>
+                    <h3>Compromisso com a Entrega</h3>
+                    <p>Logística estruturada para cumprir rigorosamente os prazos acordados na montagem do seu ambiente corporativo.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🤝</div>
+                    <h3>Atendimento de Qualidade</h3>
+                    <p>Consultores especializados para auxiliar na escolha ideal de cadeiras, mesas, armários e layouts funcionais.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">⭐</div>
+                    <h3>Produtos de Alta Qualidade</h3>
+                    <p>Trabalhamos com linhas reconhecidas nacionalmente pela resistência estrutural e acabamento profissional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--surface-color); border-top: 1px solid var(--surface-border);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Destaques do Nosso Catálogo</h2>
+                    <p>Selecione os móveis desejados e monte sua lista de cotação diretamente pelo site.</p>
+                </div>
+                <div id="catalog-grid" class="products-grid"></div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="catalogo.html" class="btn-primary">Ver Catálogo Completo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 id="company-name">MILACAN MÓVEIS PARA ESCRITÓRIO</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;">Soluções completas em mobiliário corporativo, ergonomia e armazenagem em aço em Pernambuco.</p>
+                <p style="font-size: 0.85rem; color: #94A3B8;">CNPJ: 04.260.294/0002-22</p>
+            </div>
+            <div>
+                <h4>Linhas de Produtos</h4>
+                <div class="footer-links">
+                    <a href="catalogo.html">Cadeiras Ergonômicas Cavaletti</a>
+                    <a href="catalogo.html">Mesas & Estações Linha Yaris</a>
+                    <a href="catalogo.html">Mobiliário Corporativo Linha Start</a>
+                    <a href="catalogo.html">Arquivos, Estantes e Roupeiros em Aço</a>
+                </div>
+            </div>
+            <div>
+                <h4>Loja Física & Atendimento</h4>
+                <p id="footer-address" style="font-size: 0.9rem; margin-bottom: 8px;">R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+                <p id="footer-email" style="font-size: 0.9rem; margin-bottom: 8px;">milacan100@hotmail.com</p>
+                <p style="font-size: 0.9rem;">(81) 99625-9540 | (81) 99793-5116</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">© 2026 Milacan Móveis para Escritório. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5581996259540" id="whatsapp-contact" class="whatsapp-float" target="_blank">WhatsApp Comercial</a>
+    <script src="app.js"></script>
+
+</body>
+</html>

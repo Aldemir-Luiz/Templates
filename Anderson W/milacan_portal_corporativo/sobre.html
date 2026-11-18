@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Milacan Móveis para Escritório</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span>📍 R. da Conceição, 100 - Boa Vista, Recife - PE | CNPJ: 04.260.294/0002-22</span>
+            <div class="top-bar-links">
+                <span>📞 (81) 99625-9540 / (81) 99793-5116</span>
+                <span>✉️ milacan100@hotmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" id="logo" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">
+                    MILA<span>CAN</span>
+                    <span class="logo-sub">Móveis para Escritório</span>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html" class="">Página Inicial</a>
+                <a href="catalogo.html" class="">Catálogo Completo</a>
+                <a href="sobre.html" class="active">Sobre Nós</a>
+                <a href="contato.html" class="">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="quote-btn" onclick="toggleDrawer()">
+                    Lista de Cotação <span class="quote-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside id="quote-drawer" class="quote-drawer">
+        <div class="drawer-header">
+            <h3>Lista de Cotação B2B</h3>
+            <button class="close-drawer" onclick="toggleDrawer(false)">✕</button>
+        </div>
+        <div id="drawer-items" class="drawer-items"></div>
+        <div style="padding-top: 16px; border-top: 1px solid var(--surface-border);">
+            <button class="btn-primary" style="width: 100%;" onclick="sendQuoteWhatsApp()">Enviar Cotação no WhatsApp</button>
+        </div>
+    </aside>
+
+
+    <main>
+        <section class="hero" style="padding: 60px 0;">
+            <div class="container">
+                <span class="badge-pill">Institucional</span>
+                <h1>Sobre a Milacan Móveis</h1>
+                <p>Referência em mobiliário corporativo em Pernambuco, oferecendo soluções ergonômicas, funcionais e duráveis para empresas de todos os portes.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Compromisso, Qualidade e Atendimento Especializado</h2>
+                    <p>Localizada na <strong>R. da Conceição, 100 - Boa Vista, Recife - PE</strong>, a <strong>Milacan Móveis para Escritório</strong> atua no fornecimento completo de mobiliário corporativo, atendendo escritórios, clínicas, instituições de ensino, indústrias e órgãos públicos.</p>
+                    <p>Nossa atuação é guiada por três pilares fundamentais que definem o relacionamento com nossos clientes: <strong>compromisso com a entrega</strong>, <strong>atendimento de qualidade</strong> e <strong>produtos de alta qualidade</strong>.</p>
+                    <p>Disponibilizamos um portfólio completo que abrange desde cadeiras ergonômicas certificadas (como a renomada linha <strong>Cavaletti</strong>) até estações de trabalho modulares das linhas <strong>Yaris</strong> e <strong>Start</strong>, mesas diretor, mesas de reunião, armários, gaveteiros e toda a linha de <strong>móveis em aço</strong> (arquivos, estantes e roupeiros).</p>
+                    <div style="margin-top: 28px;">
+                        <a href="catalogo.html" class="btn-primary">Conhecer Nossas Linhas</a>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-stat-card">
+                        <h4>1. Compromisso com a Entrega</h4>
+                        <p>Respeito integral aos prazos estabelecidos para que a operação da sua empresa não pare.</p>
+                    </div>
+                    <div class="about-stat-card">
+                        <h4>2. Atendimento de Qualidade</h4>
+                        <p>Suporte comercial próximo e consultivo para especificar os móveis adequados a cada ambiente.</p>
+                    </div>
+                    <div class="about-stat-card">
+                        <h4>3. Produtos de Alta Qualidade</h4>
+                        <p>Seleção rigorosa de fornecedores e materiais com foco em ergonomia, resistência e acabamento.</p>
+                    </div>
+                    <div class="about-stat-card">
+                        <h4>Dados Institucionais</h4>
+                        <p><strong>Razão Social:</strong> Milacan Móveis para Escritório<br>
+                        <strong>CNPJ:</strong> 04.260.294/0002-22<br>
+                        <strong>Sede:</strong> Boa Vista, Recife - PE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 id="company-name">MILACAN MÓVEIS PARA ESCRITÓRIO</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;">Soluções completas em mobiliário corporativo, ergonomia e armazenagem em aço em Pernambuco.</p>
+                <p style="font-size: 0.85rem; color: #94A3B8;">CNPJ: 04.260.294/0002-22</p>
+            </div>
+            <div>
+                <h4>Linhas de Produtos</h4>
+                <div class="footer-links">
+                    <a href="catalogo.html">Cadeiras Ergonômicas Cavaletti</a>
+                    <a href="catalogo.html">Mesas & Estações Linha Yaris</a>
+                    <a href="catalogo.html">Mobiliário Corporativo Linha Start</a>
+                    <a href="catalogo.html">Arquivos, Estantes e Roupeiros em Aço</a>
+                </div>
+            </div>
+            <div>
+                <h4>Loja Física & Atendimento</h4>
+                <p id="footer-address" style="font-size: 0.9rem; margin-bottom: 8px;">R. da Conceição, 100 - Boa Vista, Recife - PE, 50060-130</p>
+                <p id="footer-email" style="font-size: 0.9rem; margin-bottom: 8px;">milacan100@hotmail.com</p>
+                <p style="font-size: 0.9rem;">(81) 99625-9540 | (81) 99793-5116</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">© 2026 Milacan Móveis para Escritório. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5581996259540" id="whatsapp-contact" class="whatsapp-float" target="_blank">WhatsApp Comercial</a>
+    <script src="app.js"></script>
+
+</body>
+</html>
